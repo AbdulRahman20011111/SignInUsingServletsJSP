@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>signinproject</display-name>
+  <servlet>
+  	<servlet-name>test</servlet-name>
+  	<servlet-class>signinproject.MySignInUpProject</servlet-class>
+  	
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>test</servlet-name>
+  	<url-pattern>/xl</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  	<servlet-name>test1</servlet-name>
+  	<servlet-class>signinproject.MySignUpProject</servlet-class>
+  	
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>test1</servlet-name>
+  	<url-pattern>/xi</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  	<servlet-name>test2</servlet-name>
+  	<servlet-class>signinproject.MySignInUpProject</servlet-class>
+  	
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>test2</servlet-name>
+  	<url-pattern>/xu</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+ 	 <servlet-name>test3</servlet-name>
+   	<servlet-class>signinproject.FetchLogin</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>test3</servlet-name>
+  	<url-pattern>/si</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+ 	 <servlet-name>test4</servlet-name>
+   	<servlet-class>signinproject.UpdateProfile</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>test4</servlet-name>
+  	<url-pattern>/update</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+ 	 <servlet-name>test5</servlet-name>
+   	<servlet-class>signinproject.DoneUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>test5</servlet-name>
+  	<url-pattern>/u</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+ 	 <servlet-name>test6</servlet-name>
+   	<servlet-class>signinproject.Delete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>test6</servlet-name>
+  	<url-pattern>/del</url-pattern>
+  </servlet-mapping>
+  
+  <error-page>
+  	<exception-type>java.lang.Throwable</exception-type>
+  	<location>/error.html</location>
+  </error-page>
+  
+  <error-page>
+  	<error-code>404</error-code>
+  	<location>/un1.html</location>
+  </error-page>
+  
+</web-app>
